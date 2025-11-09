@@ -10,32 +10,32 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const categories = [
   {
-    id: "kitchen",
-    title: "Kitchen Interiors",
+    id: "living",
+    title: "Living Room Interiors",
     items: [
       {
-        title: "Modern Modular Kitchen",
-        description: "Contemporary design with premium finishes",
-        image: "/images_in/IMG-20251030-WA0005.jpg",
-        price: "Starting at 3.57L*"
+        title: "Contemporary Living Room",
+        description: "Modern and elegant spaces",
+        image: "/images_in/IMG-20251030-WA0003.jpg",
+        price: "Starting at 5.25L*"
       },
       {
-        title: "Marble Finish Kitchen",
-        description: "Elegant and durable surfaces",
-        image: "/images_in/IMG-20251030-WA0025.jpg",
-        price: "Starting at 4.25L*"
+        title: "Minimalist Decor Room",
+        description: "Clean and sophisticated design",
+        image: "/images_in/IMG-20251030-WA0015.jpg",
+        price: "Starting at 4.75L*"
       },
       {
-        title: "Smart Pantry Unit",
-        description: "Optimized storage solutions",
-        image: "/images_in/IMG-20251030-WA0040.jpg",
-        price: "Starting at 2.85L*"
-      },
-      {
-        title: "Elegant Wooden Layout",
-        description: "Warm and inviting design",
+        title: "Spacious Family Lounge",
+        description: "Comfortable gathering spaces",
         image: "/images_in/IMG-20251030-WA0030.jpg",
-        price: "Starting at 3.95L*"
+        price: "Starting at 5.95L*"
+      },
+      {
+        title: "Urban Chic Living Space",
+        description: "Trendy and functional design",
+        image: "/images_in/IMG-20251030-WA0050.jpg",
+        price: "Starting at 5.45L*"
       }
     ]
   },
@@ -70,34 +70,84 @@ const categories = [
     ]
   },
   {
-    id: "living",
-    title: "Living Room Interiors",
+    id: "kitchen",
+    title: "Kitchen Interiors",
     items: [
       {
-        title: "Contemporary Living Room",
-        description: "Modern and elegant spaces",
-        image: "/images_in/IMG-20251030-WA0003.jpg",
-        price: "Starting at 5.25L*"
+        title: "Modern Modular Kitchen",
+        description: "Contemporary design with premium finishes",
+        image: "/images_in/IMG-20251030-WA0005.jpg",
+        price: "Starting at 3.57L*"
       },
       {
-        title: "Minimalist Decor Room",
-        description: "Clean and sophisticated design",
-        image: "/images_in/IMG-20251030-WA0015.jpg",
-        price: "Starting at 4.75L*"
+        title: "Marble Finish Kitchen",
+        description: "Elegant and durable surfaces",
+        image: "/images_in/IMG-20251030-WA0025.jpg",
+        price: "Starting at 4.25L*"
       },
       {
-        title: "Spacious Family Lounge",
-        description: "Comfortable gathering spaces",
+        title: "Smart Pantry Unit",
+        description: "Optimized storage solutions",
+        image: "/images_in/IMG-20251030-WA0040.jpg",
+        price: "Starting at 2.85L*"
+      },
+      {
+        title: "Elegant Wooden Layout",
+        description: "Warm and inviting design",
         image: "/images_in/IMG-20251030-WA0030.jpg",
-        price: "Starting at 5.95L*"
-      },
-      {
-        title: "Urban Chic Living Space",
-        description: "Trendy and functional design",
-        image: "/images_in/IMG-20251030-WA0050.jpg",
-        price: "Starting at 5.45L*"
+        price: "Starting at 3.95L*"
       }
     ]
+  },
+  {
+    id: "wardrobe",
+    title: "Wardrobe Interiors",
+    // Use actual wardrobe image filenames from public/images_in/wardrobe
+    items: [
+      'IMG-20251030-WA0017.jpg',
+      'IMG-20251030-WA0029.jpg',
+      'IMG-20251030-WA0059.jpg',
+      'IMG-20251030-WA0060.jpg',
+      'IMG-20251109-WA0005.jpg',
+      'IMG-20251109-WA0006.jpg',
+      'IMG-20251109-WA0007.jpg',
+      'IMG-20251109-WA0008.jpg',
+      'IMG-20251109-WA0009.jpg',
+      'IMG-20251109-WA0010.jpg',
+      'IMG-20251109-WA0011.jpg',
+      'IMG-20251109-WA0012.jpg',
+      'IMG-20251109-WA0013.jpg',
+      'IMG-20251109-WA0014.jpg',
+      'IMG-20251109-WA0015.jpg',
+      'IMG-20251109-WA0016.jpg',
+      'IMG-20251109-WA0017.jpg',
+      'IMG-20251109-WA0018.jpg',
+      'IMG-20251109-WA0019.jpg',
+      'IMG-20251109-WA0020.jpg',
+      'IMG-20251109-WA0021.jpg',
+      'IMG-20251109-WA0022.jpg',
+      'IMG-20251109-WA0023.jpg',
+      'IMG-20251109-WA0024.jpg',
+      'IMG-20251109-WA0025.jpg',
+      'IMG-20251109-WA0026.jpg',
+      'IMG-20251109-WA0027.jpg',
+      'IMG-20251109-WA0028.jpg',
+      'IMG-20251109-WA0029.jpg',
+      'IMG-20251109-WA0030.jpg',
+      'IMG-20251109-WA0031.jpg',
+      'IMG-20251109-WA0032.jpg',
+      'IMG-20251109-WA0033.jpg',
+      'IMG-20251109-WA0034.jpg',
+      'IMG-20251109-WA0035.jpg',
+      'IMG-20251109-WA0036.jpg',
+      'IMG-20251109-WA0037.jpg',
+      'IMG-20251109-WA0038.jpg',
+    ].map((fileName, i) => ({
+      title: `Wardrobe Design ${i + 1}`,
+      description: "Stylish and functional wardrobe",
+      image: `/images_in/wardrobe/${fileName}`,
+      price: "Starting at 2.95L*",
+    })),
   }
 ]
 
@@ -196,8 +246,8 @@ export function InteriorsSection() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      {categories.map((category) => (
-        <div id={category.id} key={category.id}>
+      {categories.map((category, idx) => (
+        <div id={category.id} key={category.id} className={idx > 0 ? 'mt-28' : ''}>
           <InteriorsCarousel category={category} />
         </div>
       ))}
