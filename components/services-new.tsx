@@ -54,7 +54,7 @@ export function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-6 sm:mb-8">
           <h2
-            className={`text-2xl sm:text-3xl md:text-4xl font-serif font-semibold mb-3 sm:mb-4 text-[#2E2B28] text-balance transition-all duration-700 ${
+            className={`text-2xl font-serif font-semibold mb-3 sm:mb-4 text-[#2E2B28] text-balance transition-all duration-700 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
@@ -76,8 +76,8 @@ export function Services() {
                 <div className="text-3xl sm:text-4xl mb-3 sm:mb-4" aria-hidden>
                   {service.icon}
                 </div>
-                <h3 className="text-lg sm:text-xl font-serif text-[#2E2B28] mb-2 sm:mb-3">{service.title}</h3>
-                <p className="text-[#2E2B28]/70 font-sans text-lg leading-relaxed">{service.description}</p>
+                <h3 className="text-lg font-serif text-[#2E2B28] mb-2 sm:mb-3">{service.title}</h3>
+                <p className="text-[#2E2B28]/70 font-sans text-sm leading-relaxed">{service.description}</p>
               </Card>
             </M.div>
           ))}

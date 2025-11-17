@@ -14,29 +14,17 @@ export default function WhyChoose() {
   return (
   <section id="why-choose" className="py-12 bg-[#FAF5EF]">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-center text-2xl sm:text-3xl font-serif font-semibold text-[#2E2B28] mb-8">Why Choose SMHD Interiors?</h2>
+        <h2 className="text-center text-2xl font-serif font-semibold text-[#2E2B28] mb-8">Why Choose SMHD Interiors?</h2>
 
-        <div className="grid grid-cols-2 gap-x-4 gap-y-0 max-w-3xl mx-auto">
-          <div className="space-y-8">
-            {features.slice(0, 2).map((f) => (
-              <div key={f.id} className="flex flex-col items-center">
-                <div className="bg-gray-100 rounded-full p-6 w-24 h-24 flex items-center justify-center shadow-sm">
-                  <f.icon className="w-9 h-9 text-[#C46B43]" />
-                </div>
-                <div className="mt-3 text-lg text-[#2E2B28] leading-tight text-center">{f.title}</div>
+        <div className="grid grid-cols-2 gap-6 sm:gap-8 max-w-3xl mx-auto">
+          {features.map((f) => (
+            <div key={f.id} className="flex flex-col items-center">
+              <div className="bg-gray-100 rounded-full p-4 sm:p-6 w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center shadow-sm">
+                <f.icon className="w-7 h-7 sm:w-9 sm:h-9 text-[#C46B43]" />
               </div>
-            ))}
-          </div>
-          <div className="space-y-8">
-            {features.slice(2, 4).map((f) => (
-              <div key={f.id} className="flex flex-col items-center">
-                <div className="bg-gray-100 rounded-full p-6 w-24 h-24 flex items-center justify-center shadow-sm">
-                  <f.icon className="w-9 h-9 text-[#C46B43]" />
-                </div>
-                <div className="mt-3 text-lg text-[#2E2B28] leading-tight text-center">{f.title}</div>
-              </div>
-            ))}
-          </div>
+              <div className="mt-3 text-sm text-[#2E2B28] leading-tight text-center min-h-[2.5rem] flex items-center">{f.title}</div>
+            </div>
+          ))}
         </div>
 
       </div>

@@ -16,7 +16,7 @@ export default function HowItWorks() {
   return (
     <section id="how" className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <h3 className="text-2xl font-serif font-bold mb-6">How it works</h3>
+        <h2 className="text-2xl font-serif font-bold mb-6">How it works</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {steps.map((s, i) => {
             const Icon = s.icon
@@ -33,10 +33,10 @@ export default function HowItWorks() {
                 <div className="p-3 rounded-md bg-[#FAF5EF]">
                   <Icon className="h-6 w-6 text-[#C46B43]" />
                 </div>
-                <h4 id={`how-step-${i}`} className="font-semibold">
+                <h4 id={`how-step-${i}`} className="font-semibold text-sm">
                   {s.title}
                 </h4>
-                <p className="text-lg text-muted-foreground">{s.desc}</p>
+                <p className="text-sm text-muted-foreground">{s.desc}</p>
               </M.article>
             )
           })}

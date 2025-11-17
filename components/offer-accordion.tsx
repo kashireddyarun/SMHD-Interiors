@@ -76,7 +76,7 @@ export default function OfferAccordion() {
   return (
     <section id="offers" className="py-20 bg-[#FAF5EF]">
       <div className="max-w-4xl mx-auto px-6">
-        <h3 className="text-2xl font-serif font-bold mb-8 text-[#2E2B28]">What We Offer</h3>
+        <h2 className="text-2xl font-serif font-bold mb-8 text-[#2E2B28]">What We Offer</h2>
 
         <div className="space-y-4">
           {items.map((it) => {

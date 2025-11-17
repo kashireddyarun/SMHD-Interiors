@@ -93,25 +93,25 @@ export function ConsultationForm({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="w-full max-w-xl p-6">
-        <DialogTitle className="text-2xl sm:text-3xl font-serif font-semibold text-[#2E2B28] mb-2">
+      <DialogContent className="max-w-xl p-6 max-h-[90vh] overflow-y-auto">
+        <DialogTitle className="text-2xl font-serif font-semibold text-[#2E2B28] mb-2">
           Get a free design consultation
         </DialogTitle>
-        <DialogDescription className="text-[#2E2B28]/70 text-lg mb-4">
+        <DialogDescription className="text-[#2E2B28]/70 text-sm mb-4">
           Design it your way, but for less
         </DialogDescription>
         
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block text-lg font-medium text-[#2E2B28] mb-2">Property type</label>
+            <label className="block text-sm font-medium text-[#2E2B28] mb-2">Property type</label>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
               {["1 BHK", "2 BHK", "3 BHK", "4+ BHK / Duplex"].map((type) => (
                 <button
                   key={type}
                   type="button"
                   onClick={() => setFormData({ ...formData, propertyType: type as PropertyType })}
-                  className={`px-4 py-2 rounded-lg text-lg border transition-all duration-200 ${
+                  className={`px-4 py-2 rounded-lg text-sm border transition-all duration-200 ${
                     formData.propertyType === type
                       ? "bg-[#C46B43] text-white border-[#C46B43]"
                       : "border-gray-200 text-[#2E2B28] hover:border-[#C46B43]"
@@ -124,7 +124,7 @@ export function ConsultationForm({
           </div>
 
           <div>
-            <label htmlFor="location" className="block text-lg font-medium text-[#2E2B28] mb-2">
+            <label htmlFor="location" className="block text-sm font-medium text-[#2E2B28] mb-2">
               Property Location
             </label>
             <input
@@ -138,7 +138,7 @@ export function ConsultationForm({
           </div>
 
           <div>
-            <label htmlFor="name" className="block text-lg font-medium text-[#2E2B28] mb-2">
+            <label htmlFor="name" className="block text-sm font-medium text-[#2E2B28] mb-2">
               Name
             </label>
             <input
@@ -152,11 +152,11 @@ export function ConsultationForm({
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-lg font-medium text-[#2E2B28] mb-2">
+            <label htmlFor="phone" className="block text-sm font-medium text-[#2E2B28] mb-2">
               Mobile Number
             </label>
             <div className="flex">
-              <span className="inline-flex items-center px-4 rounded-l-lg border border-r-0 border-gray-200 bg-gray-50 text-gray-500 text-lg">
+              <span className="inline-flex items-center px-4 rounded-l-lg border border-r-0 border-gray-200 bg-gray-50 text-gray-500 text-sm">
                 +91
               </span>
               <input
@@ -178,7 +178,7 @@ export function ConsultationForm({
               onChange={(e) => setFormData({ ...formData, whatsappUpdates: e.target.checked })}
               className="rounded border-gray-300 text-[#C46B43] focus:ring-[#C46B43]"
             />
-            <label htmlFor="whatsapp" className="text-lg text-[#2E2B28] flex items-center">
+            <label htmlFor="whatsapp" className="text-sm text-[#2E2B28] flex items-center">
               Yes, send me updates via WhatsApp
               <MessageSquare className="w-4 h-4 ml-1 text-green-500" />
             </label>
