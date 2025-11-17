@@ -43,13 +43,13 @@ export function About() {
 
           <div>
             <h2
-              className={`text-2xl font-serif font-semibold mb-6 text-[#2E2B28] transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              className={`text-4xl font-serif font-semibold mb-6 text-[#2E2B28] transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
             >
               About SMHD Interiors
             </h2>
             <p
-              className={`text-sm text-[#2E2B28]/80 font-sans leading-relaxed transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              className={`text-lg text-[#2E2B28]/80 font-sans leading-relaxed transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
             >
               Welcome to SMHD Interiors – where creativity meets comfort.

@@ -32,12 +32,16 @@ export default function Page() {
           <Hero />
         </M.section>
 
-        <M.section variants={sectionMotion} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="py-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <WhyChoose />
-            <InteriorsSection />
-            <About />
-          </div>
+        <M.section variants={sectionMotion} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+          <WhyChoose />
+        </M.section>
+
+        <M.section variants={sectionMotion} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+          <InteriorsSection />
+        </M.section>
+
+        <M.section variants={sectionMotion} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+          <About />
         </M.section>
 
         <M.section variants={sectionMotion} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="py-8">

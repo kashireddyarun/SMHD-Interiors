@@ -12,14 +12,14 @@ export function Footer() {
                 SMHD <span className="text-[#C46B43]">INTERIORS</span>
               </span>
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed max-w-md mb-4 flex items-start">
+            <p className="text-gray-600 text-lg leading-relaxed max-w-md mb-4 flex items-start">
               <CircleDot className="h-5 w-5 mr-2 mt-1 text-[#C46B43] flex-shrink-0" />
               <span>
                 Crafting exceptional interiors that blend timeless elegance with modern functionality. Your vision, our
                 expertise.
               </span>
             </p>
-            <div className="text-gray-600 text-sm space-y-3">
+            <div className="text-gray-600 text-lg space-y-3">
               
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 mt-1 text-[#C46B43]" />
@@ -49,7 +49,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-bold mb-4 text-gray-800">Quick Links</h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-lg">
               <li>
                 <a href="#home" className="text-gray-600 hover:text-[#C46B43] transition-colors duration-200">
                   Home
@@ -80,7 +80,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-bold mb-4 text-gray-800">Contact Us</h3>
-            <div className="space-y-3 text-sm text-gray-600">
+            <div className="space-y-3 text-lg text-gray-600">
               <p>
                 <a href="tel:+919940322694" title="Call us" className="flex items-center hover:text-[#C46B43] transition-colors duration-200">
                   <Phone className="h-4 w-4 mr-2 text-[#C46B43]" />
@@ -138,8 +138,8 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-600">© 2025 SMHD Interiors. All rights reserved.</p>
-          <div className="flex gap-6 text-sm">
+          <p className="text-lg text-gray-600">© 2025 SMHD Interiors. All rights reserved.</p>
+          <div className="flex gap-6 text-lg">
             <a href="#" className="text-gray-600 hover:text-[#C46B43] transition-colors duration-200">
               Privacy Policy
             </a>

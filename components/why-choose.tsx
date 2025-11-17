@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export default function WhyChoose() {
   const features = [
-    { id: 'poss', title: '51040 Design Possibilities', icon: HomeIcon },
+    { id: 'poss', title: ' Design Possibilities', icon: HomeIcon },
     { id: 'storage', title: '20% EXTRA Storage', icon: StorageIcon },
     { id: 'emi', title: 'No Cost EMIs', icon: RupeeIcon },
     { id: 'warranty', title: 'Upto 25 Year Warranty', icon: ShieldIcon },
