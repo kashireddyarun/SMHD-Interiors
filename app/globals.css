@@ -162,10 +162,16 @@
     font-size: revert;
   }
 
+  /* Ensure all regular text elements inherit the body font size (exclude headings) */
+  p, a, li, blockquote, label, span, input, textarea, button {
+    font-size: inherit;
+    line-height: 1.7;
+  }
+
   /* Responsive text sizing */
   @media (max-width: 640px) {
     html {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 

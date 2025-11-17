@@ -77,7 +77,7 @@ export function Services() {
                   {service.icon}
                 </div>
                 <h3 className="text-lg sm:text-xl font-serif text-[#2E2B28] mb-2 sm:mb-3">{service.title}</h3>
-                <p className="text-[#2E2B28]/70 font-sans text-sm leading-relaxed">{service.description}</p>
+                <p className="text-[#2E2B28]/70 font-sans text-lg leading-relaxed">{service.description}</p>
               </Card>
             </M.div>
           ))}

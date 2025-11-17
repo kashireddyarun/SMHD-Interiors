@@ -47,7 +47,7 @@ const initialCategories = [
       title: `Wardrobe Design ${i + 1}`,
       description: "Stylish and functional wardrobe",
       image: `/images_in/wardrobe/${fileName}`,
-      price: "Starting at 2.95L*",
+      price: "Starting at 57k*",
     })),
   }
 ]
@@ -123,7 +123,7 @@ function InteriorsCarousel({ category }: { category: typeof initialCategories[0]
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 <div className="mt-4 text-center">
-                  <p className="text-sm text-[#2E2B28]/70">
+                  <p className="text-lg text-[#2E2B28]/70">
                     {item.description}
                   </p>
                 </div>
@@ -170,9 +170,9 @@ export function InteriorsSection() {
               const json = await res.json()
               const images: string[] = json.images || []
               const priceMap: Record<string, string> = {
-                living: 'Starting at 5.25L*',
-                bedroom: 'Starting at 4.75L*',
-                kitchen: 'Starting at 3.57L*',
+                living: 'Starting at 1.21L*',
+                bedroom: 'Starting at 1.17L*',
+                kitchen: 'Starting at 1.53L*',
               }
               const descMap: Record<string, string> = {
                 living: 'Stylish and functional living room',

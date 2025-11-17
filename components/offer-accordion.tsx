@@ -44,6 +44,7 @@ const items = [
     • 3-year warranty on carpentry and woodwork
     • 2-year warranty on hardware and fixtures
     • 1-year warranty on paint and polish work
+    • Terms and conditions apply
     
     Our warranty includes:
     • Free repairs for manufacturing defects
@@ -118,7 +119,7 @@ export default function OfferAccordion() {
                     </div>
                     <div>
                       <div className="font-semibold text-[#2E2B28] text-lg">{it.title}</div>
-                      <div className="text-sm text-[#2E2B28]/60 mt-1">
+                      <div className="text-lg text-[#2E2B28]/60 mt-1">
                         {isOpen ? "Click to close" : "Click to learn more"}
                       </div>
                     </div>

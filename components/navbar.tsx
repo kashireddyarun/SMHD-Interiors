@@ -113,7 +113,7 @@ export function Navbar() {
                   alt="SMHD Interiors"
                   className="h-10 sm:h-12 w-auto mr-2"
                 />
-                <span className="text-white font-semibold text-lg sm:text-xl">SMHD<span className="text-[#C46B43]">INTERIORS</span></span>
+                <span className="text-white font-semibold text-lg sm:text-xl">SMHD <span className="text-[#C46B43]">INTERIORS</span></span>
               </div>
             </a>
           </div>

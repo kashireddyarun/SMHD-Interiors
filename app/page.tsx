@@ -28,7 +28,7 @@ export default function Page() {
         exit={{ opacity: 0 }}
         className="bg-[#FAF5EF] text-[#2E2B28] overflow-x-hidden space-y-8 sm:space-y-10"
       >
-        <M.section variants={sectionMotion} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="pt-14 pb-6 sm:pt-16 lg:pt-20">
+        <M.section variants={sectionMotion} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
           <Hero />
         </M.section>
 

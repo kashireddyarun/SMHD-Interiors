@@ -23,7 +23,7 @@ export default function WhyChoose() {
                 <div className="bg-gray-100 rounded-full p-6 w-24 h-24 flex items-center justify-center shadow-sm">
                   <f.icon className="w-9 h-9 text-[#C46B43]" />
                 </div>
-                <div className="mt-3 text-sm text-[#2E2B28] leading-tight text-center">{f.title}</div>
+                <div className="mt-3 text-lg text-[#2E2B28] leading-tight text-center">{f.title}</div>
               </div>
             ))}
           </div>
@@ -33,15 +33,12 @@ export default function WhyChoose() {
                 <div className="bg-gray-100 rounded-full p-6 w-24 h-24 flex items-center justify-center shadow-sm">
                   <f.icon className="w-9 h-9 text-[#C46B43]" />
                 </div>
-                <div className="mt-3 text-sm text-[#2E2B28] leading-tight text-center">{f.title}</div>
+                <div className="mt-3 text-lg text-[#2E2B28] leading-tight text-center">{f.title}</div>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="flex justify-center mt-8">
-          <Button className="bg-[#C46B43] hover:bg-[#B25B33] text-white px-6 py-3 rounded-lg shadow-md">Talk To Our Designer</Button>
-        </div>
       </div>
     </section>
   )

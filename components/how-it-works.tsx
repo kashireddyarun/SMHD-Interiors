@@ -36,7 +36,7 @@ export default function HowItWorks() {
                 <h4 id={`how-step-${i}`} className="font-semibold">
                   {s.title}
                 </h4>
-                <p className="text-sm text-muted-foreground">{s.desc}</p>
+                <p className="text-lg text-muted-foreground">{s.desc}</p>
               </M.article>
             )
           })}

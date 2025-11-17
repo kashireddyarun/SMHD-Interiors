@@ -35,12 +35,12 @@ export default function Metrics() {
 
   const years = useCountWhenInView(12, inView)
   const projects = useCountWhenInView(340, inView)
-  const clients = useCountWhenInView(280, inView)
+  const clients = useCountWhenInView(320, inView)
 
   const row = [
-    { label: "Years in Business", value: years },
-    { label: "Projects Completed", value: projects },
-    { label: "Happy Clients", value: clients },
+    { label: "Years in Business", value: years, suffix: "" },
+    { label: "Projects Completed", value: projects, suffix: "" },
+    { label: "Happy Clients", value: clients, suffix: "+" },
   ]
 
   return (
@@ -57,7 +57,7 @@ export default function Metrics() {
               className="flex-1 min-w-0"
             >
               <div className="p-4 sm:p-6 bg-white/90 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 text-center">
-                <div className="text-xl sm:text-3xl font-bold text-[#C46B43]">{r.value}</div>
+                <div className="text-xl sm:text-3xl font-bold text-[#C46B43]">{r.value}{r.suffix}</div>
                 <div className="mt-1 sm:mt-2 text-xs sm:text-base text-[#2E2B28]/80 whitespace-normal break-words leading-snug">{r.label}</div>
               </div>
             </M.div>
