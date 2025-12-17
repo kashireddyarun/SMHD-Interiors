@@ -1,0 +1,52 @@
+/* ✅ Navbar visual blur */
+.nav-blur {
+  backdrop-filter: saturate(180%) blur(8px);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+}
+
+/* ✅ Mobile menu optimizations */
+@media (max-width: 768px) {
+  body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
+  .mobile-nav-item {
+    transform-origin: top;
+    touch-action: manipulation;
+  }
+}
+
+/* ✅ Better touch targets */
+@media (hover: none) {
+  .nav-link {
+    padding: 0.75rem;
+  }
+}
+
+/* ✅ FIX: Remove forced gap between navbar and hero */
+/* BEFORE your code forced 4–5rem height here.
+   This version removes the gap WITHOUT breaking layout.
+   If any JS relies on this element, it remains — just height is zero. */
+.navbar-spacer {
+  height: 0 !important;  /* full removal of gap */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ✅ No change needed for this media query, just keep it - height remains 0 */
+@media (min-width: 640px) {
+  .navbar-spacer {
+    height: 0 !important;
+  }
+}
+
+/* ✅ Safe area padding for mobile devices (kept unchanged)
+   But we ensure background inherits so padding doesn't look white */
+@supports (padding: env(safe-area-inset-top)) {
+  .nav-container {
+    padding-top: env(safe-area-inset-top);
+    background-color: inherit; /* prevents white top padding */
+  }
+}
